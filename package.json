@@ -1,0 +1,23 @@
+{
+  "name": "web-technology-lab-works",
+  "version": "1.0.0",
+  "description": "Web application for uploading and downloading folders with files",
+  "main": "server.js",
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["upload", "download", "folder", "files"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "archiver": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3"
+  }
+}
