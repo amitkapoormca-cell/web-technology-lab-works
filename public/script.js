@@ -1,8 +1,11 @@
 let selectedFolder = null;
 let selectedFiles = [];
 
-// API base URL
-const API_BASE = 'http://localhost:3000/api';
+// API base URL - use relative path in production so requests go to the same origin
+// When developing locally with separate server port, set to 'http://localhost:3000/api'
+const API_BASE = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? 'http://localhost:3000/api'
+    : '/api';
 
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
